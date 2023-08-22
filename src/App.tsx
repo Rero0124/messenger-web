@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<header className="py-6 px-12 w-full box-border overflow-auto">
+				<header className="box-border px-12 py-6 w-full overflow-auto">
 					<ul className="float-right">
 						<li className="inline-block px-2">
 							<Link to="/">Home</Link>
@@ -26,7 +26,7 @@ function App() {
 						</li>
 					</ul>
 				</header>
-				<section className="px-12 w-full box-border">
+				<section className="box-border px-12 w-full">
 					<Routes>
 						<Route path="/" element={<Layout children={<Friends />} />}/>
 						<Route path="/friends" element={<Layout children={<Friends />} />}/>
